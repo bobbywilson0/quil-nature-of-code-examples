@@ -6,20 +6,15 @@
   (q/background 0)
   (q/no-loop))
 
-(def increment 0.02)
+(def increment 0.005)
 
 (defn bright [xoff yoff]
   (* (q/noise xoff yoff) 255))
 
 (defn draw []
-  (let [pxs (q/pixels)]
-    (doseq [x (range 0 (q/width)) :let [xoff (* x increment)]]
-      (doseq [y (range 0 (q/height)) :let [yoff (* y increment)]]
-        (aset-int
-          pxs
-          (+ x (* y (q/width)))
-          (q/color (bright xoff yoff)))
-        (q/update-pixels)))))
+  (doseq [x (range 0 (q/width)) :let [xoff (* x increment)]]
+    (doseq [y (range 0 (q/height)) :let [yoff (* y increment)]]
+      (q/set-pixel x y (q/color (bright xoff yoff))))))
 
 (q/defsketch nature-of-code
   :setup setup
