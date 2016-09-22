@@ -3,16 +3,23 @@
   (:import [processing.core]))
 
 (defn setup []
-  (q/background 255)
+  (q/background 0)
   (q/no-loop))
+
+(def increment 0.02)
+
+(defn bright [xoff yoff]
+  (* (q/noise xoff yoff) 255))
 
 (defn draw []
   (let [pxs (q/pixels)]
-    (doseq [x (range 0 (q/width))
-            y (range 0 (q/height))]
-      (let [bright (q/map-range (q/noise (* x 0.05) (* y 0.05)) 0 1 0 255)]
-        (aset-int pxs (+ x (* y (q/width))) (q/color bright)))))
-  (q/update-pixels))
+    (doseq [x (range 0 (q/width)) :let [xoff (* x increment)]]
+      (doseq [y (range 0 (q/height)) :let [yoff (* y increment)]]
+        (aset-int
+          pxs
+          (+ x (* y (q/width)))
+          (q/color (bright xoff yoff)))
+        (q/update-pixels)))))
 
 (q/defsketch nature-of-code
   :setup setup
