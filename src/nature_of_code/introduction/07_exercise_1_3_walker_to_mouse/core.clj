@@ -1,7 +1,7 @@
-(ns nature-of-code.introduction.07_exercise_1_3_walker_to_mouse.core
+(ns nature-of-code.introduction.07-exercise-1-3-walker-to-mouse.core
   (:require [quil.core :as q]
             [quil.middleware :as m]
-            [nature-of-code.introduction.07_exercise_1_3_walker_to_mouse.walker :as walker]))
+            [nature-of-code.introduction.07-exercise-1-3-walker-to-mouse.walker :as walker]))
 
 (defn setup []
   (q/background 255)

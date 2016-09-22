@@ -1,4 +1,4 @@
-(ns nature-of-code.introduction.06_walker_tends_to_right.walker
+(ns nature-of-code.introduction.06-walker-tends-to-right.walker
   (:require [quil.core :as q]
             [quil.middleware :as m]))
 

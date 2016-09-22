@@ -1,4 +1,4 @@
-(ns nature-of-code.introduction.11_figure_1_5_noise_1d_graph.core
+(ns nature-of-code.introduction.11-figure-1-5-noise-1d-graph.core
   (:require [quil.core :as q]))
 
 (def t (atom 0.0))

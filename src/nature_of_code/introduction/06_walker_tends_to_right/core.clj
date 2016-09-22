@@ -1,7 +1,7 @@
-(ns nature-of-code.introduction.06_walker_tends_to_right.core
+(ns nature-of-code.introduction.06-walker-tends-to-right.core
   (:require [quil.core :as q]
             [quil.middleware :as m]
-            [nature-of-code.introduction.06_walker_tends_to_right.walker :as walker]))
+            [nature-of-code.introduction.06-walker-tends-to-right.walker :as walker]))
 
 (defn setup []
   (q/background 255)

@@ -1,4 +1,4 @@
-(ns nature-of-code.introduction.03-random-walk-tradational.core
+(ns nature-of-code.introduction.03-random-walk-traditional.core
   (:require [quil.core :as q]
             [quil.middleware :as m]
             [nature-of-code.introduction.03-random-walk-traditional.walker :as walker]))

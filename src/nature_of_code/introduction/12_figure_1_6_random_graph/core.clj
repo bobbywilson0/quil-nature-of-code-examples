@@ -1,4 +1,4 @@
-(ns nature-of-code.introduction.12_figure_1_6_random_graph.core
+(ns nature-of-code.introduction.12-figure-1-6-random-graph.core
   (:require [quil.core :as q]))
 
 (defn setup []

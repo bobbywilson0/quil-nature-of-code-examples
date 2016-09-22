@@ -1,4 +1,4 @@
-(ns nature-of-code.introduction.13_random_walk_noise.walker
+(ns nature-of-code.introduction.13-random-walk-noise.walker
   (:require [quil.core :as q]))
 
 

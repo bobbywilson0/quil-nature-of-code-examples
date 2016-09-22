@@ -1,4 +1,4 @@
-(ns nature-of-code.introduction.07_exercise_1_3_walker_to_mouse.walker
+(ns nature-of-code.introduction.07-exercise-1-3-walker-to-mouse.walker
   (:require [quil.core :as q]
             [quil.middleware :as m]))
 

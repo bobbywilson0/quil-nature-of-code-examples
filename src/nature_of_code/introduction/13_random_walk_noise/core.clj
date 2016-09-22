@@ -1,6 +1,6 @@
-(ns nature-of-code.introduction.13_random_walk_noise.core
+(ns nature-of-code.introduction.13-random-walk-noise.core
   (:require [quil.core :as q]
-            [nature-of-code.introduction.13_random_walk_noise.walker :as walker]))
+            [nature-of-code.introduction.13-random-walk-noise.walker :as walker]))
 
 (defn setup []
   (q/background 0))
