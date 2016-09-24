@@ -18,7 +18,7 @@
 
 (defn render [state]
   (doseq [x (range 0 (- (count (:z state)) 1))]
-    (doseq [y (range 0 (+ x 1))]
+    (doseq [y (range 0 (- (count (get-in state [:z x])) 1))]
       (q/stroke 0)
       (q/fill 100 100)
       (q/push-matrix)
